@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>İzmit Kadın Doğum | Kadın Sağlığı ve Doğum Kliniği</title>
+<meta name="description" content="İzmit Kadın Doğum: gebelik takibi, normal ve ağrısız doğum, tüp bebek ve jinekolojik cerrahi. Uzman kadromuzla annelik yolculuğunuzda yanınızdayız.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --rose:#c9727f; --rose-d:#a9535f; --rose-l:#f6e4e4; --blush:#fcf6f3;
+  --sage:#7d9a8c; --sage-l:#e6eee9; --ink:#2e2a2b; --muted:#6f6668;
+  --line:#ecdfdc; --white:#fff; --r:22px;
+  --shadow:0 18px 50px -24px rgba(120,60,70,.35);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Plus Jakarta Sans",system-ui,sans-serif;color:var(--ink);background:var(--blush);line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:600;line-height:1.15;letter-spacing:-.01em}
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+section{padding:96px 0}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--rose-d)}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--rose);border-radius:2px}
+.sec-head{max-width:640px;margin-bottom:48px}
+.sec-head h2{font-size:clamp(1.9rem,3.6vw,2.7rem);margin:12px 0 14px}
+.sec-head p{color:var(--muted);font-size:1.05rem}
+.center{text-align:center;margin-inline:auto}
+.center .eyebrow{justify-content:center}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:999px;font-weight:600;font-size:.97rem;transition:.25s;border:2px solid transparent;cursor:pointer}
+.btn-primary{background:var(--rose);color:#fff;box-shadow:0 10px 26px -10px rgba(201,114,127,.8)}
+.btn-primary:hover{background:var(--rose-d);transform:translateY(-2px)}
+.btn-ghost{border-color:var(--ink);color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:#fff}
+svg.i{width:20px;height:20px;flex:none}
+
+/* top bar + nav */
+.topbar{background:var(--ink);color:#f3e9e9;font-size:.85rem}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;padding:9px 0;flex-wrap:wrap}
+.topbar span{display:inline-flex;align-items:center;gap:7px;opacity:.9}
+header{position:sticky;top:0;z-index:50;background:rgba(252,246,243,.88);backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:.3s}
+header.scrolled{border-color:var(--line);box-shadow:0 6px 30px -20px rgba(0,0,0,.3)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:78px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-mark{width:44px;height:44px;border-radius:50%;background:linear-gradient(140deg,var(--rose),#e7a8a0);display:grid;place-items:center;color:#fff}
+.logo b{font-family:"Fraunces",serif;font-size:1.25rem;display:block;line-height:1.1}
+.logo small{font-size:.72rem;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+.menu{display:flex;gap:28px;list-style:none;font-weight:500;font-size:.95rem}
+.menu a{position:relative;padding:6px 0}
+.menu a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--rose);transition:.25s}
+.menu a:hover::after{width:100%}
+.nav .btn{padding:11px 20px}
+.burger{display:none;background:none;border:0;cursor:pointer;padding:8px}
+.burger span{display:block;width:24px;height:2px;background:var(--ink);margin:5px 0;transition:.3s}
+
+/* hero */
+.hero{padding:70px 0 100px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,var(--rose-l),transparent 70%);right:-160px;top:-120px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;position:relative}
+.hero h1{font-size:clamp(2.4rem,5.2vw,4rem);margin:18px 0 22px}
+.hero h1 em{font-style:italic;color:var(--rose-d)}
+.hero p.lead{font-size:1.15rem;color:var(--muted);max-width:520px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin:34px 0 38px}
+.trust{display:flex;align-items:center;gap:14px;font-size:.9rem;color:var(--muted)}
+.avatars{display:flex}
+.avatars i{width:38px;height:38px;border-radius:50%;border:3px solid var(--blush);margin-left:-10px;display:block}
+.avatars i:first-child{margin-left:0}
+.stars{color:#e0a43c;letter-spacing:2px}
+.hero-art{position:relative;aspect-ratio:4/4.6;border-radius:220px 220px var(--r) var(--r);background:linear-gradient(170deg,#f2d4d2 0%,#e8b7b4 55%,#d99a9c 100%);box-shadow:var(--shadow);overflow:hidden}
+.hero-art>svg{position:absolute;inset:auto 0 0 0;width:100%;height:auto}
+.float-card{position:absolute;background:#fff;border-radius:18px;padding:14px 18px;box-shadow:var(--shadow);display:flex;align-items:center;gap:12px;font-size:.88rem;animation:float 5s ease-in-out infinite}
+.float-card b{display:block;font-size:1rem}
+.float-card .ic{width:42px;height:42px;border-radius:12px;display:grid;place-items:center}
+.fc1{left:14px;top:20%}
+.fc2{right:14px;bottom:14%;animation-delay:-2.5s}
+@keyframes float{50%{transform:translateY(-10px)}}
+
+/* stats */
+.stats{padding:0;margin-top:-40px;position:relative;z-index:2}
+.stats-grid{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);display:grid;grid-template-columns:repeat(4,1fr);padding:34px 20px}
+.stat{text-align:center;padding:4px 12px;border-right:1px solid var(--line)}
+.stat:last-child{border:0}
+.stat b{font-family:"Fraunces",serif;font-size:2.4rem;color:var(--rose-d);display:block;line-height:1.1}
+.stat span{color:var(--muted);font-size:.92rem}
+
+/* about */
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.about-img{position:relative;border-radius:var(--r);aspect-ratio:5/4;background:var(--sage-l);overflow:hidden;box-shadow:var(--shadow)}
+.about-list{list-style:none;display:grid;gap:14px;margin:26px 0 32px}
+.about-list li{display:flex;gap:12px;align-items:flex-start}
+.check{width:26px;height:26px;border-radius:50%;background:var(--sage-l);color:var(--sage);display:grid;place-items:center;flex:none;margin-top:1px}
+
+/* services */
+.services{background:#fff}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.svc{position:relative;border:1px solid var(--line);border-radius:var(--r);padding:30px 28px;background:var(--blush);transition:.3s;cursor:pointer}
+.svc:hover{transform:translateY(-6px);box-shadow:var(--shadow);background:#fff;border-color:transparent}
+.svc .ic{width:56px;height:56px;border-radius:16px;background:var(--rose-l);color:var(--rose-d);display:grid;place-items:center;margin-bottom:20px}
+.svc .ic svg{width:28px;height:28px}
+.svc h3{font-size:1.3rem;margin-bottom:8px}
+.svc p{color:var(--muted);font-size:.95rem}
+.svc .more{display:inline-flex;margin-top:16px;font-weight:600;font-size:.9rem;color:var(--rose-d);gap:6px}
+.badge{position:absolute;top:20px;right:20px;background:var(--sage);color:#fff;font-size:.7rem;font-weight:700;padding:5px 11px;border-radius:999px;letter-spacing:.03em}
+.svc.featured{background:linear-gradient(160deg,#fbeeee,#fff)}
+
+/* surgery */
+.surgery .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.surgery-media{border-radius:var(--r);overflow:hidden;position:relative;aspect-ratio:16/11;box-shadow:var(--shadow);background:linear-gradient(135deg,#dbe7e1,#b6ccc1)}
+.surgery-media .ph{position:absolute;inset:0;display:grid;place-items:center;color:#4f6b5e;text-align:center;font-weight:600;font-size:.95rem}
+.surgery-media img{width:100%;height:100%;object-fit:cover}
+.mini-steps{display:grid;gap:16px;margin-top:26px}
+.mini-steps div{display:flex;gap:14px;padding:16px 18px;background:#fff;border-radius:16px;border:1px solid var(--line)}
+.mini-steps b{font-family:"Fraunces",serif;color:var(--rose);font-size:1.3rem;line-height:1}
+
+/* doctors */
+.doctors{background:#fff}
+.doc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.doc{border-radius:var(--r);overflow:hidden;background:var(--blush);border:1px solid var(--line);transition:.3s}
+.doc:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.doc-photo{aspect-ratio:1/1.05;display:grid;place-items:end center;overflow:hidden}
+.doc-photo svg{width:78%}
+.doc-body{padding:20px 22px 24px}
+.doc-body h3{font-size:1.15rem}
+.doc-body span{color:var(--rose-d);font-size:.86rem;font-weight:600}
+.doc-body p{color:var(--muted);font-size:.88rem;margin-top:8px}
+
+/* videos */
+.vid-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.vid{border-radius:var(--r);overflow:hidden;background:#fff;box-shadow:0 8px 30px -22px rgba(0,0,0,.4);cursor:pointer}
+.vid-thumb{aspect-ratio:16/9;position:relative;display:grid;place-items:center}
+.play{width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,.95);display:grid;place-items:center;color:var(--rose-d);transition:.3s;box-shadow:0 0 0 10px rgba(255,255,255,.3)}
+.vid:hover .play{transform:scale(1.1)}
+.vid-body{padding:18px 20px}
+.vid-body h3{font-size:1.05rem;font-family:"Plus Jakarta Sans";font-weight:600}
+.vid-body span{color:var(--muted);font-size:.85rem}
+
+/* testimonials */
+.testi{background:var(--ink);color:#f5eceb}
+.testi .sec-head p{color:#cbbdbd}
+.testi .eyebrow{color:#efb2b8}
+.t-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.t-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:30px}
+.t-card p{font-family:"Fraunces",serif;font-size:1.08rem;line-height:1.6;margin:14px 0 22px}
+.t-card small{color:#cbbdbd}
+
+/* institutions */
+.inst-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.inst{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 18px;text-align:center;font-weight:600;display:flex;flex-direction:column;align-items:center;gap:10px;transition:.25s}
+.inst:hover{border-color:var(--rose);color:var(--rose-d)}
+.inst i{width:44px;height:44px;border-radius:50%;background:var(--sage-l);color:var(--sage);display:grid;place-items:center;font-style:normal;font-family:"Fraunces",serif;font-size:1.1rem}
+.inst-note{text-align:center;color:var(--muted);margin-top:26px;font-size:.92rem}
+
+/* faq */
+.faq{background:#fff}
+.faq .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px}
+details{border-bottom:1px solid var(--line);padding:20px 0}
+summary{cursor:pointer;font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.5rem;line-height:1;color:var(--rose);transition:.3s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--muted);margin-top:12px}
+
+/* cta + contact */
+.cta-band{background:linear-gradient(120deg,var(--rose),#d98f8f);border-radius:32px;padding:56px;color:#fff;display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+.cta-band h2{font-size:clamp(1.8rem,3.4vw,2.5rem)}
+.cta-band p{opacity:.92;margin-top:12px}
+form{background:#fff;border-radius:var(--r);padding:28px;display:grid;gap:12px;color:var(--ink)}
+input,select,textarea{width:100%;padding:13px 16px;border:1px solid var(--line);border-radius:12px;font:inherit;background:var(--blush)}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--rose-l);border-color:var(--rose)}
+form .btn{justify-content:center}
+.form-ok{display:none;text-align:center;color:var(--sage);font-weight:600}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:56px}
+.c-item{display:flex;gap:16px;background:#fff;border-radius:var(--r);padding:24px;border:1px solid var(--line)}
+.c-item .ic{width:48px;height:48px;border-radius:14px;background:var(--rose-l);color:var(--rose-d);display:grid;place-items:center;flex:none}
+.c-item small{color:var(--muted)}
+.map{margin-top:22px;border-radius:var(--r);overflow:hidden;height:340px;border:1px solid var(--line)}
+.map iframe{width:100%;height:100%;border:0}
+
+footer{background:var(--ink);color:#cbbdbd;padding:60px 0 28px;margin-top:96px}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px}
+footer h4{color:#fff;margin-bottom:14px;font-size:1rem}
+footer ul{list-style:none;display:grid;gap:8px;font-size:.92rem}
+footer a:hover{color:#fff}
+.f-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:40px;padding-top:22px;font-size:.85rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+footer .logo b{color:#fff}
+
+/* floating */
+.fab{position:fixed;right:20px;bottom:20px;z-index:60;display:flex;flex-direction:column;gap:12px}
+.fab a{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;color:#fff;box-shadow:0 10px 24px -8px rgba(0,0,0,.4);transition:.25s}
+.fab a:hover{transform:scale(1.08)}
+.fab .wa{background:#25d366}
+.fab .ph{background:var(--rose)}
+.fab svg{width:26px;height:26px}
+.wa-tip{position:absolute;right:68px;bottom:78px;background:#fff;color:var(--ink);padding:10px 14px;border-radius:14px 14px 4px 14px;font-size:.85rem;box-shadow:var(--shadow);white-space:nowrap;opacity:0;transform:translateY(8px);transition:.4s;pointer-events:none}
+.wa-tip.show{opacity:1;transform:none}
+
+/* modal */
+.modal{position:fixed;inset:0;background:rgba(46,42,43,.55);z-index:100;display:none;place-items:center;padding:16px}
+.modal.open{display:grid}
+.modal-box{background:#fff;border-radius:var(--r);max-width:560px;width:100%;padding:36px;position:relative;max-height:90vh;overflow:auto;animation:pop .3s}
+.modal-box.video{max-width:900px;padding:0;background:#000}
+.modal-box.video iframe{width:100%;aspect-ratio:16/9;display:block;border:0}
+.modal-box h3{font-size:1.6rem;margin-bottom:12px}
+.modal-box p{color:var(--muted);margin-bottom:12px}
+.close{position:absolute;top:12px;right:14px;width:38px;height:38px;border-radius:50%;border:0;background:var(--blush);font-size:1.4rem;cursor:pointer;z-index:2}
+@keyframes pop{from{transform:scale(.95);opacity:0}}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:1024px){
+  .menu{display:none}
+  .burger{display:block}
+  .nav>.btn{display:none}
+  .menu.open{display:flex;flex-direction:column;position:absolute;top:78px;left:0;right:0;background:var(--blush);padding:20px 24px 28px;gap:16px;border-bottom:1px solid var(--line)}
+  .svc-grid,.vid-grid,.t-grid{grid-template-columns:1fr 1fr}
+  .doc-grid,.inst-grid{grid-template-columns:repeat(2,1fr)}
+  .f-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  section{padding:68px 0}
+  .hero .wrap,.about .wrap,.surgery .wrap,.faq .wrap,.cta-band{grid-template-columns:1fr}
+  .hero-art{max-width:420px;margin-inline:auto;width:100%}
+  .fc1{left:0}.fc2{right:0}
+  .stats-grid{grid-template-columns:1fr 1fr;row-gap:24px}
+  .stat:nth-child(2){border:0}
+  .svc-grid,.vid-grid,.t-grid,.contact-grid{grid-template-columns:1fr}
+  .cta-band{padding:32px 22px}
+  .topbar .hide-m{display:none}
+  .f-grid{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<!-- İkon sprite -->
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m22 7-10 6L2 7"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-baby" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M10 7.5h.01M14 7.5h.01M10.5 10a2 2 0 0 0 3 0"/><path d="M6 21c0-3.3 2.7-6 6-6s6 2.7 6 6"/></symbol>
+  <symbol id="i-preg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="4" r="2"/><path d="M10 7c-2 1-2 4-1 6l-1 8M12 7c3 1 5 3.5 4.5 6.5-.4 2-2.3 2.5-4.5 2.5l.5 5"/></symbol>
+  <symbol id="i-calm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c3 3 4 6 0 10-4-4-3-7 0-10z"/><path d="M12 13c-4 0-8-2-9-5 4-1 7 1 9 5zM12 13c4 0 8-2 9-5-4-1-7 1-9 5z"/><path d="M12 13v8"/></symbol>
+  <symbol id="i-flask" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6L4.5 18.5A2 2 0 0 0 6.2 21.5h11.6a2 2 0 0 0 1.7-3L14 9V3"/><path d="M7 15h10"/></symbol>
+  <symbol id="i-scope" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v6a4 4 0 0 0 8 0V3"/><path d="M10 13v2a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="11" r="2"/></symbol>
+  <symbol id="i-flower" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2a4 4 0 0 1 0 7 4 4 0 0 1 0-7zM12 15a4 4 0 0 1 0 7 4 4 0 0 1 0-7zM2 12a4 4 0 0 1 7 0 4 4 0 0 1-7 0zM15 12a4 4 0 0 1 7 0 4 4 0 0 1-7 0z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 2.5 1 3 .8 3.6.7.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15l-1.4 5 5.1-1.3A10 10 0 1 0 12 2zm0 18.3c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.3 8.3 0 1 1 12 20.3z"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13a1 1 0 0 0 1.5.9l10-6.5a1 1 0 0 0 0-1.7l-10-6.6A1 1 0 0 0 8 5.5z"/></symbol>
+  <!-- doktor silueti -->
+  <symbol id="doc-sil" viewBox="0 0 200 200"><circle cx="100" cy="72" r="38" fill="#f1d3c6"/><path d="M62 66c0-26 18-42 38-42s38 16 38 42c-6-12-20-20-38-20s-32 8-38 20z" fill="#5b4140"/><path d="M28 200c0-44 32-72 72-72s72 28 72 72z" fill="#fff"/><path d="M82 130l18 30 18-30" fill="none" stroke="#e7dcda" stroke-width="3"/><path d="M78 140c-6 18-4 34 8 40" fill="none" stroke="#7d9a8c" stroke-width="4" stroke-linecap="round"/><circle cx="88" cy="182" r="6" fill="#7d9a8c"/></symbol>
+</svg>
+
+<div class="topbar">
+  <div class="wrap">
+    <span><svg class="i" style="width:15px;height:15px"><use href="#i-pin"/></svg> İzmit / Kocaeli</span>
+    <span class="hide-m"><svg class="i" style="width:15px;height:15px"><use href="#i-clock"/></svg> 7/24 Acil Doğum Hizmeti</span>
+    <span><svg class="i" style="width:15px;height:15px"><use href="#i-phone"/></svg> <a href="tel:+902620000000">0 (262) 000 00 00</a></span>
+  </div>
+</div>
+
+<header id="header">
+  <div class="wrap nav">
+    <a href="#" class="logo">
+      <span class="logo-mark"><svg class="i"><use href="#i-heart"/></svg></span>
+      <span><b>İzmit Kadın Doğum</b><small>Kadın Sağlığı &amp; Doğum</small></span>
+    </a>
+    <ul class="menu" id="menu">
+      <li><a href="#hakkimizda">Hakkımızda</a></li>
+      <li><a href="#hizmetler">Hizmetlerimiz</a></li>
+      <li><a href="#doktorlar">Doktorlarımız</a></li>
+      <li><a href="#videolar">Videolar</a></li>
+      <li><a href="#kurumlar">Anlaşmalı Kurumlar</a></li>
+      <li><a href="#iletisim">İletişim</a></li>
+    </ul>
+    <a href="#randevu" class="btn btn-primary"><svg class="i"><use href="#i-cal"/></svg> Randevu Al</a>
+    <button class="burger" id="burger" aria-label="Menüyü aç"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">İzmit'in güvenilir kadın sağlığı merkezi</span>
+      <h1>Hayatınızın en özel yolculuğunda <em>yalnız değilsiniz.</em></h1>
+      <p class="lead">Gebeliğin ilk gününden bebeğinizi kucağınıza aldığınız ana kadar; uzman hekimlerimiz ve şefkatli ekibimizle her adımda yanınızdayız.</p>
+      <div class="hero-cta">
+        <a href="#randevu" class="btn btn-primary">Ücretsiz Ön Görüşme <svg class="i"><use href="#i-arrow"/></svg></a>
+        <a href="#hizmetler" class="btn btn-ghost">Hizmetlerimiz</a>
+      </div>
+      <div class="trust">
+        <div class="avatars"><i style="background:#e8b7b4"></i><i style="background:#c7d6ce"></i><i style="background:#f2d4c2"></i><i style="background:#d99a9c"></i></div>
+        <div><span class="stars">★★★★★</span><br>Binlerce mutlu anne bize güvendi</div>
+      </div>
+    </div>
+    <div class="hero-art reveal">
+      <!-- Anne & bebek illüstrasyonu -->
+      <svg viewBox="0 0 400 420" aria-hidden="true">
+        <circle cx="300" cy="90" r="46" fill="#fff" opacity=".35"/>
+        <path d="M0 420V300c60-30 120-20 200 0s150 10 200-20v140z" fill="#fff" opacity=".25"/>
+        <path d="M120 420c0-90 30-170 90-190 50-16 100 20 110 80 8 50-10 90-20 110z" fill="#fbf1ee"/>
+        <circle cx="215" cy="150" r="50" fill="#f1d3c6"/>
+        <path d="M160 150c0-45 25-75 60-75 38 0 62 30 58 72-4-26-26-46-56-46-30 0-50 20-62 49z" fill="#5b4140"/>
+        <path d="M168 140c-14 40-6 90 24 110" fill="none" stroke="#5b4140" stroke-width="22" stroke-linecap="round"/>
+        <path d="M200 160q8 6 16 0" stroke="#a9535f" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <path d="M193 140q6 -4 12 0M225 140q6 -4 12 0" stroke="#5b4140" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <ellipse cx="238" cy="300" rx="62" ry="44" fill="#fff"/>
+        <circle cx="270" cy="280" r="26" fill="#f6dcd1"/>
+        <path d="M262 282q4 -3 8 0M276 282q4 -3 8 0" stroke="#5b4140" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+        <path d="M150 300c30 40 90 50 150 10" fill="none" stroke="#f1d3c6" stroke-width="22" stroke-linecap="round"/>
+        <path d="M60 60l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" fill="#fff"/>
+        <path d="M340 200l3 7 7 3-7 3-3 7-3-7-7-3 7-3z" fill="#fff"/>
+      </svg>
+      <div class="float-card fc1"><span class="ic" style="background:var(--sage-l);color:var(--sage)"><svg class="i"><use href="#i-shield"/></svg></span><span><b>Güvenli Doğum</b>Uzman ekip, modern ortam</span></div>
+      <div class="float-card fc2"><span class="ic" style="background:var(--rose-l);color:var(--rose-d)"><svg class="i"><use href="#i-heart"/></svg></span><span><b>7/24</b>Yanınızdayız</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- İSTATİSTİK -->
+<section class="stats">
+  <div class="wrap">
+    <div class="stats-grid reveal">
+      <div class="stat"><b data-count="25">0</b><span>Yıllık Tecrübe</span></div>
+      <div class="stat"><b data-count="15000" data-suffix="+">0</b><span>Sağlıklı Doğum</span></div>
+      <div class="stat"><b data-count="12">0</b><span>Uzman Hekim</span></div>
+      <div class="stat"><b data-count="98" data-suffix="%">0</b><span>Hasta Memnuniyeti</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- HAKKIMIZDA -->
+<section class="about" id="hakkimizda">
+  <div class="wrap">
+    <div class="about-img reveal">
+      <svg viewBox="0 0 500 400" style="width:100%;height:100%" aria-hidden="true">
+        <rect width="500" height="400" fill="#e6eee9"/>
+        <rect x="60" y="70" width="380" height="250" rx="20" fill="#fff"/>
+        <rect x="90" y="100" width="150" height="190" rx="14" fill="#f6e4e4"/>
+        <circle cx="165" cy="170" r="34" fill="#f1d3c6"/><path d="M110 290c0-40 25-62 55-62s55 22 55 62z" fill="#c9727f"/>
+        <rect x="265" y="110" width="145" height="14" rx="7" fill="#e6eee9"/><rect x="265" y="138" width="110" height="14" rx="7" fill="#e6eee9"/>
+        <rect x="265" y="180" width="145" height="60" rx="12" fill="#fcf6f3"/>
+        <path d="M280 215l20-14 18 18 22-22 22 18 18-10" fill="none" stroke="#c9727f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="265" y="255" width="80" height="30" rx="15" fill="#7d9a8c"/>
+      </svg>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Hakkımızda</span>
+      <div class="sec-head" style="margin-bottom:0">
+        <h2>Size bir hasta gibi değil, aileden biri gibi davranıyoruz</h2>
+        <p>İzmit Kadın Doğum olarak, kadın sağlığının her döneminde bilimsel doğrulara dayanan, güler yüzlü ve kişiye özel bir hizmet sunuyoruz. Kaygılarınızı dinliyor, sorularınızı sabırla yanıtlıyoruz.</p>
+      </div>
+      <ul class="about-list">
+        <li><span class="check"><svg class="i" style="width:14px;height:14px"><use href="#i-check"/></svg></span><span><b>Kişiye özel takip</b> — her gebelik farklıdır, planınız da öyle.</span></li>
+        <li><span class="check"><svg class="i" style="width:14px;height:14px"><use href="#i-check"/></svg></span><span><b>Modern doğumhane ve ameliyathane</b> — son teknoloji cihazlar.</span></li>
+        <li><span class="check"><svg class="i" style="width:14px;height:14px"><use href="#i-check"/></svg></span><span><b>Ulaşılabilir hekimler</b> — aklınıza takılan her soru için yanınızdayız.</span></li>
+      </ul>
+      <a href="#doktorlar" class="btn btn-ghost">Ekibimizle Tanışın</a>
+    </div>
+  </div>
+</section>
+
+<!-- HİZMETLER -->
+<section class="services" id="hizmetler">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Hizmetlerimiz</span>
+      <h2>Kadın sağlığında kapsamlı bakım</h2>
+      <p>Detaylı bilgi için kartlara tıklayın.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc reveal" data-svc="gebelik"><div class="ic"><svg><use href="#i-preg"/></svg></div><h3>Gebelik Takibi</h3><p>İlk ultrasondan doğuma kadar düzenli, güven veren kontroller.</p><span class="more">Detaylı bilgi <svg class="i" style="width:16px"><use href="#i-arrow"/></svg></span></div>
+      <div class="svc reveal" data-svc="normal"><div class="ic"><svg><use href="#i-baby"/></svg></div><h3>Normal Doğum</h3><p>Anne ve bebek için en doğal, en sağlıklı başlangıç.</p><span class="more">Detaylı bilgi <svg class="i" style="width:16px"><use href="#i-arrow"/></svg></span></div>
+      <div class="svc featured reveal" data-svc="agrisiz"><span class="badge">Hastanemizde Uygulanmaktadır</span><div class="ic"><svg><use href="#i-calm"/></svg></div><h3>Ağrısız Doğum</h3><p>Epidural yöntemle, doğumu daha konforlu ve huzurlu yaşayın.</p><span class="more">Detaylı bilgi <svg class="i" style="width:16px"><use href="#i-arrow"/></svg></span></div>
+      <div class="svc reveal" data-svc="tupbebek"><div class="ic"><svg><use href="#i-flask"/></svg></div><h3>Tüp Bebek</h3><p>Bebek hayalinize ulaşmanız için kişiye özel tedavi planları.</p><span class="more">Detaylı bilgi <svg class="i" style="width:16px"><use href="#i-arrow"/></svg></span></div>
+      <div class="svc reveal" data-svc="cerrahi"><div class="ic"><svg><use href="#i-scope"/></svg></div><h3>Jinekolojik Cerrahi</h3><p>Laparoskopik (kapalı) ve histeroskopik ameliyatlar.</p><span class="more">Detaylı bilgi <svg class="i" style="width:16px"><use href="#i-arrow"/></svg></span></div>
+      <div class="svc reveal" data-svc="checkup"><div class="ic"><svg><use href="#i-flower"/></svg></div><h3>Kadın Sağlığı Check-up</h3><p>Smear, HPV taraması, menopoz ve hormon takibi.</p><span class="more">Detaylı bilgi <svg class="i" style="width:16px"><use href="#i-arrow"/></svg></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- AMELİYAT / ALTYAPI -->
+<section class="surgery">
+  <div class="wrap">
+    <div class="surgery-media reveal">
+      <!-- Ameliyat görselini buraya koyun: <img src="img/ameliyathane.jpg" alt="Ameliyathanemiz"> -->
+      <div class="ph"><div><svg class="i" style="width:48px;height:48px;margin:0 auto 10px"><use href="#i-scope"/></svg>Ameliyathane / ameliyat görseli<br><small style="font-weight:400">img/ameliyathane.jpg</small></div></div>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Ameliyathanemiz</span>
+      <div class="sec-head" style="margin-bottom:0">
+        <h2>Güvenliğiniz için en son teknoloji</h2>
+        <p>Steril ve modern ameliyathanemizde, deneyimli cerrahi ekibimizle kapalı (laparoskopik) ve açık ameliyatları en yüksek güvenlik standartlarında gerçekleştiriyoruz.</p>
+      </div>
+      <div class="mini-steps">
+        <div><b>01</b><span><b style="font-family:inherit;color:var(--ink);font-size:1rem">Detaylı ön değerlendirme</b><br><small style="color:var(--muted)">Ameliyat öncesi tüm sorularınızı yanıtlıyoruz.</small></span></div>
+        <div><b>02</b><span><b style="font-family:inherit;color:var(--ink);font-size:1rem">Daha az ağrı, hızlı iyileşme</b><br><small style="color:var(--muted)">Kapalı yöntemlerle kısa hastanede kalış.</small></span></div>
+        <div><b>03</b><span><b style="font-family:inherit;color:var(--ink);font-size:1rem">Ameliyat sonrası yakın takip</b><br><small style="color:var(--muted)">İyileşene kadar sizi yalnız bırakmıyoruz.</small></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOKTORLAR -->
+<section class="doctors" id="doktorlar">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Doktorlarımız</span>
+      <h2>Size emanet edilen en değerli şey için<br>en deneyimli eller</h2>
+    </div>
+    <div class="doc-grid">
+      <!-- Doktor isimlerini ve fotoğraflarını güncelleyin. Fotoğraf için <svg> yerine <img src="img/dr1.jpg" alt=""> kullanın -->
+      <div class="doc reveal"><div class="doc-photo" style="background:#f6e4e4"><svg viewBox="0 0 200 200"><use href="#doc-sil"/></svg></div><div class="doc-body"><h3>Op. Dr. Ad Soyad</h3><span>Kadın Hastalıkları ve Doğum Uzmanı</span><p>Yüksek riskli gebelikler, ağrısız doğum</p></div></div>
+      <div class="doc reveal"><div class="doc-photo" style="background:var(--sage-l)"><svg viewBox="0 0 200 200"><use href="#doc-sil"/></svg></div><div class="doc-body"><h3>Op. Dr. Ad Soyad</h3><span>Kadın Hastalıkları ve Doğum Uzmanı</span><p>Tüp bebek, kısırlık tedavisi</p></div></div>
+      <div class="doc reveal"><div class="doc-photo" style="background:#f6e9dc"><svg viewBox="0 0 200 200"><use href="#doc-sil"/></svg></div><div class="doc-body"><h3>Op. Dr. Ad Soyad</h3><span>Kadın Hastalıkları ve Doğum Uzmanı</span><p>Laparoskopik cerrahi</p></div></div>
+      <div class="doc reveal"><div class="doc-photo" style="background:#efe4f0"><svg viewBox="0 0 200 200"><use href="#doc-sil"/></svg></div><div class="doc-body"><h3>Uzm. Dr. Ad Soyad</h3><span>Anesteziyoloji Uzmanı</span><p>Epidural / ağrısız doğum</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- VİDEOLAR -->
+<section id="videolar">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Videolar</span>
+      <h2>Merak ettiklerinizi hekimlerimizden dinleyin</h2>
+      <p>Gebelik, doğum ve kadın sağlığı üzerine bilgilendirici videolar.</p>
+    </div>
+    <div class="vid-grid">
+      <!-- data-yt kısmına YouTube video kimliğini yazın (youtube.com/watch?v=BURASI) -->
+      <div class="vid reveal" data-yt=""><div class="vid-thumb" style="background:linear-gradient(135deg,#e8b7b4,#c9727f)"><span class="play"><svg class="i"><use href="#i-play"/></svg></span></div><div class="vid-body"><h3>Ağrısız doğum nedir, kimlere uygulanır?</h3><span>Hekimlerimizden bilgilendirme</span></div></div>
+      <div class="vid reveal" data-yt=""><div class="vid-thumb" style="background:linear-gradient(135deg,#c7d6ce,#7d9a8c)"><span class="play"><svg class="i"><use href="#i-play"/></svg></span></div><div class="vid-body"><h3>Gebelikte beslenme ve egzersiz</h3><span>Hekimlerimizden bilgilendirme</span></div></div>
+      <div class="vid reveal" data-yt=""><div class="vid-thumb" style="background:linear-gradient(135deg,#f2d4c2,#d9a07f)"><span class="play"><svg class="i"><use href="#i-play"/></svg></span></div><div class="vid-body"><h3>Tüp bebek tedavisi adım adım</h3><span>Hekimlerimizden bilgilendirme</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- YORUMLAR -->
+<section class="testi">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Annelerimiz anlatıyor</span>
+      <h2>Bize güvenenlerin hikâyeleri</h2>
+    </div>
+    <div class="t-grid">
+      <div class="t-card reveal"><span class="stars">★★★★★</span><p>"İlk gebeliğimdi ve çok korkuyordum. Her kontrolde sabırla dinlendim, doğum günü kendimi gerçekten güvende hissettim."</p><small>— Hasta yorumu</small></div>
+      <div class="t-card reveal"><span class="stars">★★★★★</span><p>"Ağrısız doğum sayesinde bebeğimle tanıştığım anı huzurla yaşadım. Ekibe sonsuz teşekkürler."</p><small>— Hasta yorumu</small></div>
+      <div class="t-card reveal"><span class="stars">★★★★★</span><p>"Yıllardır beklediğimiz bebeğimize burada kavuştuk. Bize umut verdiğiniz için minnettarız."</p><small>— Hasta yorumu</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ANLAŞMALI KURUMLAR -->
+<section id="kurumlar">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Anlaşmalı Kurumlarımız</span>
+      <h2>Özel sağlık sigortanız geçerli</h2>
+      <p>Aşağıdaki kurumlarla anlaşmalı çalışıyoruz.</p>
+    </div>
+    <div class="inst-grid">
+      <div class="inst reveal"><i>B</i>Acıbadem / Bupa Sigorta</div>
+      <div class="inst reveal"><i>D</i>Demir Hayat Sigorta</div>
+      <div class="inst reveal"><i>S</i>Sigorta Şirketi</div>
+      <div class="inst reveal"><i>S</i>Sigorta Şirketi</div>
+      <div class="inst reveal"><i>S</i>Sigorta Şirketi</div>
+      <div class="inst reveal"><i>S</i>Sigorta Şirketi</div>
+      <div class="inst reveal"><i>S</i>Sigorta Şirketi</div>
+      <div class="inst reveal"><i>S</i>Sigorta Şirketi</div>
+    </div>
+    <p class="inst-note">Kurumunuz listede yok mu? <a href="#iletisim" style="color:var(--rose-d);font-weight:600">Bizi arayın</a>, size yardımcı olalım.</p>
+  </div>
+</section>
+
+<!-- SSS -->
+<section class="faq">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Sık Sorulan Sorular</span>
+      <div class="sec-head"><h2>Aklınıza takılanlar</h2><p>Burada bulamadığınız her soru için bize WhatsApp'tan yazabilirsiniz.</p></div>
+      <a href="https://wa.me/905000000000" class="btn btn-primary" target="_blank" rel="noopener"><svg class="i"><use href="#i-wa"/></svg> WhatsApp'tan Sor</a>
+    </div>
+    <div class="reveal">
+      <details open><summary>Ağrısız doğum hastanenizde uygulanıyor mu?</summary><p>Evet. Ağrısız (epidural) doğum hastanemizde, anestezi uzmanlarımız tarafından uygulanmaktadır.</p></details>
+      <details><summary>Gebelik takibine ne zaman başlamalıyım?</summary><p>Gebelik testiniz pozitif çıktığında, genellikle son adet tarihinden 5–6 hafta sonra ilk muayeneye gelmenizi öneriyoruz.</p></details>
+      <details><summary>Tüp bebek tedavisi ne kadar sürer?</summary><p>Tek bir tedavi döngüsü ortalama 3–4 hafta sürer. Size özel planı ilk görüşmede birlikte oluşturuyoruz.</p></details>
+      <details><summary>Özel sigortam geçerli mi?</summary><p>Anlaşmalı kurumlarımız listesini inceleyebilir ya da bizi arayarak poliçenizin kapsamını öğrenebilirsiniz.</p></details>
+      <details><summary>Doğuma eşim girebilir mi?</summary><p>Uygun durumlarda eşlerin doğuma eşlik etmesini destekliyoruz. Detaylar için hekiminizle görüşebilirsiniz.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- RANDEVU -->
+<section id="randevu" style="padding-bottom:0">
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <div>
+        <h2>Annelik yolculuğunuza bugün güvenle başlayın</h2>
+        <p>Formu doldurun, ekibimiz en kısa sürede sizi arayarak uygun randevu saatini planlasın.</p>
+        <p style="margin-top:20px;display:flex;align-items:center;gap:10px;font-weight:600"><svg class="i"><use href="#i-phone"/></svg> <a href="tel:+902620000000">0 (262) 000 00 00</a></p>
+      </div>
+      <form id="form">
+        <input required placeholder="Adınız Soyadınız" name="ad">
+        <input required type="tel" placeholder="Telefon Numaranız" name="tel">
+        <select name="birim"><option>Gebelik Takibi</option><option>Ağrısız Doğum</option><option>Tüp Bebek</option><option>Jinekolojik Muayene</option><option>Diğer</option></select>
+        <textarea rows="2" placeholder="Mesajınız (isteğe bağlı)" name="mesaj"></textarea>
+        <button class="btn btn-primary" type="submit">Beni Arayın <svg class="i"><use href="#i-arrow"/></svg></button>
+        <p class="form-ok" id="formOk">Teşekkürler! En kısa sürede sizi arayacağız. 💗</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- İLETİŞİM -->
+<section id="iletisim" style="padding-bottom:0">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="c-item reveal"><span class="ic"><svg class="i"><use href="#i-pin"/></svg></span><div><b>Adres</b><br><small>Adres bilgisi buraya, İzmit / Kocaeli</small></div></div>
+      <div class="c-item reveal"><span class="ic"><svg class="i"><use href="#i-phone"/></svg></span><div><b>Telefon</b><br><small><a href="tel:+902620000000">0 (262) 000 00 00</a></small></div></div>
+      <div class="c-item reveal"><span class="ic"><svg class="i"><use href="#i-mail"/></svg></span><div><b>E-posta</b><br><small><a href="mailto:info@izmitkadindogum.com.tr">info@izmitkadindogum.com.tr</a></small></div></div>
+    </div>
+    <div class="map reveal">
+      <iframe loading="lazy" title="Harita" src="https://www.google.com/maps?q=%C4%B0zmit%20Kocaeli&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a href="#" class="logo"><span class="logo-mark"><svg class="i"><use href="#i-heart"/></svg></span><span><b>İzmit Kadın Doğum</b></span></a>
+        <p style="margin-top:16px;font-size:.92rem;max-width:300px">Kadın sağlığının her döneminde, sevgiyle ve bilimle yanınızdayız.</p>
+      </div>
+      <div><h4>Hizmetler</h4><ul><li><a href="#hizmetler">Gebelik Takibi</a></li><li><a href="#hizmetler">Ağrısız Doğum</a></li><li><a href="#hizmetler">Tüp Bebek</a></li><li><a href="#hizmetler">Jinekolojik Cerrahi</a></li></ul></div>
+      <div><h4>Kurumsal</h4><ul><li><a href="#hakkimizda">Hakkımızda</a></li><li><a href="#doktorlar">Doktorlarımız</a></li><li><a href="#videolar">Videolar</a></li><li><a href="#kurumlar">Anlaşmalı Kurumlar</a></li></ul></div>
+      <div><h4>İletişim</h4><ul><li><a href="tel:+902620000000">0 (262) 000 00 00</a></li><li><a href="mailto:info@izmitkadindogum.com.tr">info@izmitkadindogum.com.tr</a></li><li>İzmit / Kocaeli</li></ul></div>
+    </div>
+    <div class="f-bottom"><span>© <span id="yr"></span> İzmit Kadın Doğum. Tüm hakları saklıdır.</span><span>Sitedeki bilgiler tavsiye niteliğindedir; teşhis ve tedavi için hekiminize başvurunuz.</span></div>
+  </div>
+</footer>
+
+<div class="fab">
+  <span class="wa-tip" id="waTip">Merhaba 👋 Size nasıl yardımcı olabiliriz?</span>
+  <a class="wa" href="https://wa.me/905000000000" target="_blank" rel="noopener" aria-label="WhatsApp"><svg><use href="#i-wa"/></svg></a>
+  <a class="ph" href="tel:+902620000000" aria-label="Ara"><svg class="i" style="width:24px;height:24px"><use href="#i-phone"/></svg></a>
+</div>
+
+<div class="modal" id="modal"><div class="modal-box" id="modalBox"><button class="close" id="close" aria-label="Kapat">×</button><div id="modalContent"></div></div></div>
+
+<script>
+const SVC = {
+  gebelik:["Gebelik Takibi","Gebeliğiniz boyunca düzenli ultrason, kan tahlilleri, ikili-üçlü tarama ve detaylı (4D) ultrason ile bebeğinizin gelişimini yakından izliyoruz.","Her kontrolde sorularınıza zaman ayırıyor, beslenme ve yaşam önerileriyle sağlıklı bir gebelik geçirmenize destek oluyoruz."],
+  normal:["Normal Doğum","Normal doğum, anne ve bebek için en doğal ve hızlı iyileşme sağlayan yöntemdir.","Doğuma hazırlık sürecinde sizi bilgilendiriyor, doğum anında deneyimli ebe ve hekimlerimizle yanınızda oluyoruz."],
+  agrisiz:["Ağrısız Doğum","Ağrısız (epidural) doğum hastanemizde uygulanmaktadır.","Anestezi uzmanlarımız tarafından belden yapılan uygulama ile doğum ağrısı büyük ölçüde azaltılır; anne doğum boyunca bilinçli kalır ve bebeğiyle tanışma anını huzurla yaşar."],
+  tupbebek:["Tüp Bebek","Bebek sahibi olmakta güçlük yaşayan çiftlere, detaylı değerlendirme sonrası kişiye özel tüp bebek tedavi planı sunuyoruz.","Süreç boyunca her aşamayı şeffaf şekilde paylaşıyor, duygusal olarak da yanınızda oluyoruz."],
+  cerrahi:["Jinekolojik Cerrahi","Myom, kist, endometriozis ve rahim sorunlarında laparoskopik (kapalı) ve histeroskopik yöntemler uyguluyoruz.","Kapalı yöntemler sayesinde daha az ağrı, daha küçük iz ve daha hızlı iyileşme mümkündür."],
+  checkup:["Kadın Sağlığı Check-up","Yıllık jinekolojik muayene, smear ve HPV testi, meme ve kemik sağlığı değerlendirmesi.","Erken tanı hayat kurtarır. Yılda bir kez kendinize zaman ayırın."]
+};
+const modal=document.getElementById('modal'),box=document.getElementById('modalBox'),mc=document.getElementById('modalContent');
+function openModal(html,video){mc.innerHTML=html;box.classList.toggle('video',!!video);modal.classList.add('open');document.body.style.overflow='hidden'}
+function closeModal(){modal.classList.remove('open');mc.innerHTML='';document.body.style.overflow=''}
+document.getElementById('close').onclick=closeModal;
+modal.onclick=e=>{if(e.target===modal)closeModal()};
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+document.querySelectorAll('.svc').forEach(c=>c.onclick=()=>{const s=SVC[c.dataset.svc];openModal(`<h3>${s[0]}</h3><p>${s[1]}</p><p>${s[2]}</p><a href="#randevu" class="btn btn-primary" onclick="closeModal()">Randevu Al</a>`)});
+document.querySelectorAll('.vid').forEach(v=>v.onclick=()=>{const id=v.dataset.yt;
+  if(id)openModal(`<iframe src="https://www.youtube-nocookie.com/embed/${id}?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>`,true);
+  else openModal(`<h3>Video yakında</h3><p>Bu video çok yakında yayında olacak.</p>`)});
+
+// menü
+const burger=document.getElementById('burger'),menu=document.getElementById('menu');
+burger.onclick=()=>menu.classList.toggle('open');
+menu.querySelectorAll('a').forEach(a=>a.onclick=()=>menu.classList.remove('open'));
+const header=document.getElementById('header');
+addEventListener('scroll',()=>header.classList.toggle('scrolled',scrollY>10),{passive:true});
+
+// görünürlük animasyonu + sayaç
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add('in');
+  e.target.querySelectorAll('[data-count]').forEach(el=>{const t=+el.dataset.count,suf=el.dataset.suffix||'',st=performance.now();
+    (function f(n){const p=Math.min((n-st)/1600,1),v=Math.round(t*(1-Math.pow(1-p,3)));el.textContent=v.toLocaleString('tr-TR')+suf;if(p<1)requestAnimationFrame(f)})(st)});
+  io.unobserve(e.target)}),{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+// form
+document.getElementById('form').onsubmit=e=>{e.preventDefault();e.target.querySelectorAll('input,select,textarea,button').forEach(x=>x.style.display='none');document.getElementById('formOk').style.display='block'};
+
+// WhatsApp karşılama balonu
+setTimeout(()=>document.getElementById('waTip').classList.add('show'),4000);
+setTimeout(()=>document.getElementById('waTip').classList.remove('show'),12000);
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
